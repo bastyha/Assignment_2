@@ -1,6 +1,4 @@
-use std::time::Instant;
 fn main(){
-    let start = Instant::now();
     let mut numbers: Vec<String> =vec![String::from("1");1000];
     
     for i in 1..1001{
@@ -30,6 +28,5 @@ fn main(){
             sum = local_sum.to_string();
         }
     }
-    println!("the last 10 number of the sum: {sum}");
-    println!("{:?}",start.elapsed());
+    println!("the last 10 number of the sum: {sum}"); 
 }
